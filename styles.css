@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap');
+
+body{
+    font-family:Poppins;
+   background-color:rgb(223, 228, 241);
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+}
+.intro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.intro .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro .texto h1{
+    font-size: 63px;
+    line-height: none;
+}
+.intro .texto a {
+    color: black;
+    margin-right: 16px;
+}
+.avatar{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top: 20%;
+}
+.postintro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 64px;
+    border-bottom: 1px solid;
+    padding-bottom: 64px;
+}
+
+.postintro .avatar1 {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.postintro .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.postintro .texto a{
+    color: black;
+}
+ .texto p{
+    color: grey;
+}
+
+
+.postintro2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 64px;
+    border-bottom: 1px solid;
+    padding-bottom: 64px;
+}
+.postintro2 .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.postintro2 .texto a {
+    color: black;
+}
+.postintro2 .avatar2 {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+
+.postintro3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 64px;
+    border-bottom: 1px solid;
+    padding-bottom: 64px;
+}
+.postintro3 .avatar3 {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.postintro3 .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.postintro3 .texto a{
+    color: black;
+}
+
+
+@media (width < 1000px){
+  .intro{
+    text-align: center;
+     grid-template-columns: 100%;
+  }
+        
+}
+img{
+    width: 50%;
+    height: auto;
+}
+footer{
+    text-align: center;
+    margin-bottom: 55px;
+}
