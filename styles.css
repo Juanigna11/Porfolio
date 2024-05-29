@@ -6,6 +6,10 @@ body{
    background-color:rgb(223, 228, 241);
 }
 
+.trabajos{
+    margin-top: 60px;
+}
+
 
 .container{
     width: 100%;
@@ -35,7 +39,29 @@ body{
     justify-content: center;
     margin-top: 20%;
 }
-.postintro{
+
+.postintro0 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 64px;
+    border-bottom: 1px solid;
+    padding-bottom: 64px;
+}
+.postintro0 .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.postintro0 .texto a {
+    color: black;
+}
+.postintro0 .avatar0 {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.postintro1{
     display: grid;
     grid-template-columns: 50% 50%;
     margin-bottom: 64px;
@@ -43,24 +69,24 @@ body{
     padding-bottom: 64px;
 }
 
-.postintro .avatar1 {
+.postintro1 .avatar1 {
     width: 100%;
     display: flex;
     flex-direction:row;
     justify-content: center;
 }
-.postintro .texto{
+.postintro1 .texto{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.postintro .texto a{
+.postintro1 .texto a{
     color: black;
 }
+
  .texto p{
     color: grey;
 }
-
 
 .postintro2 {
     display: grid;
@@ -83,7 +109,6 @@ body{
     justify-content: center;
 }
 
-
 .postintro3{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -91,7 +116,9 @@ body{
     border-bottom: 1px solid;
     padding-bottom: 64px;
 }
+
 .postintro3 .avatar3 {
+    width: 100%;
     display: flex;
     flex-direction:row;
     justify-content: center;
