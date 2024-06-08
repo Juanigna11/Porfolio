@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap');
 
 body{
-    font-family:Poppins;
-   background-color:rgb(223, 228, 241);
+   font-family:Poppins;
+   background: rgb(0,0,0);
+   background: radial-gradient(circle, rgba(0,0,0,1) 10%, rgba(0,141,147,1) 100%, rgba(68,55,155,0.9271358201483718) 100%);
 }
 
 .trabajos{
@@ -28,9 +29,10 @@ body{
 .intro .texto h1{
     font-size: 63px;
     line-height: none;
+    animation: fadeInDown 2s ease-out;
 }
 .intro .texto a {
-    color: black;
+    color: white;
     margin-right: 16px;
 }
 .avatar{
@@ -38,6 +40,59 @@ body{
     flex-direction:row;
     justify-content: center;
     margin-top: 20%;
+    animation: fadeInUp 2s ease-out;
+}
+
+
+
+.animated img {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.avatar.bounce {
+    animation: bounce 1s;
+}
+
+@media (width < 1000px) {
+    .intro {
+        text-align: center;
+        grid-template-columns: 100%;
+    }
 }
 
 .postintro0 {
@@ -46,6 +101,7 @@ body{
     margin-bottom: 64px;
     border-bottom: 1px solid;
     padding-bottom: 64px;
+    color: white;
 }
 .postintro0 .texto{
     display: flex;
@@ -53,7 +109,7 @@ body{
     justify-content: space-between;
 }
 .postintro0 .texto a {
-    color: black;
+    color: white;
 }
 .postintro0 .avatar0 {
     display: flex;
@@ -67,6 +123,7 @@ body{
     margin-bottom: 64px;
     border-bottom: 1px solid;
     padding-bottom: 64px;
+    color: white;
 }
 
 .postintro1 .avatar1 {
@@ -81,11 +138,11 @@ body{
     justify-content: space-between;
 }
 .postintro1 .texto a{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
  .texto p{
-    color: grey;
+    color: rgb(221, 221, 221);
 }
 
 .postintro2 {
@@ -94,6 +151,7 @@ body{
     margin-bottom: 64px;
     border-bottom: 1px solid;
     padding-bottom: 64px;
+    color: white;
 }
 .postintro2 .texto{
     display: flex;
@@ -101,7 +159,7 @@ body{
     justify-content: space-between;
 }
 .postintro2 .texto a {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .postintro2 .avatar2 {
     display: flex;
@@ -115,6 +173,7 @@ body{
     margin-bottom: 64px;
     border-bottom: 1px solid;
     padding-bottom: 64px;
+    color: white;
 }
 
 .postintro3 .avatar3 {
@@ -129,7 +188,7 @@ body{
     justify-content: space-between;
 }
 .postintro3 .texto a{
-    color: black;
+    color: white;
 }
 
 
@@ -147,4 +206,8 @@ img{
 footer{
     text-align: center;
     margin-bottom: 55px;
+}
+
+h2, h3{
+    color: white;
 }
